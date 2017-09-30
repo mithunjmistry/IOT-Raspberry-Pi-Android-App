@@ -7,3 +7,5 @@ Home Automation project : https://youtu.be/UxJIQw1Ubi8
 
 Modify the app as per need for your project. This is an open-source project meant for people to learn. Using it for commercial project is
 strictly prohibited and can incur legal action. This is free to use for educational purpose only.
+
+* This App was made from October-2015 till June-2016 and is no longer maintained.
