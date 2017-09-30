@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:showIn="@layout/activity_ip"
+    tools:context="com.mithu.mithunmistry.mithun.IpActivity"
+    android:background="#6f6363">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="IP Address:-"
+            android:id="@+id/textView34"
+            android:textColor="#fefefe" />
+
+        <EditText
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ip"
+            android:text="192.168.1.100"
+            android:textColor="#f6a198" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Port:-"
+            android:id="@+id/textView35"
+            android:textColor="#fafafa" />
+
+        <EditText
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/port"
+            android:text="6000"
+            android:textColor="#cdcdf2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set"
+            android:id="@+id/button11"
+            android:onClick="setIp" />
+
+
+    </LinearLayout>
+</ScrollView>

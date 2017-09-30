@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main2"
+    tools:context="com.mithu.mithunmistry.mithun.Main2Activity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Welcome to Smart Home Control"
+                    android:id="@+id/textView3"
+                    android:layout_column="0"
+                    android:textColor="#081f6c" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_column="0" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:weightSum="1">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Door Control"
+                        android:id="@+id/doorbtn"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="false"
+                        android:width="150dp"
+                        android:textColor="#11390b"
+                        android:background="#c8f9c6"
+                        android:onClick="doorControl"
+                        android:layout_margin="6dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fan Control"
+                        android:id="@+id/fanbtn"
+                        android:layout_gravity="center_horizontal"
+                        android:width="150dp"
+                        android:textColor="#541111"
+                        android:background="#f4acac"
+                        android:layout_margin="6dp"
+                        android:onClick="fanControl"
+                        android:longClickable="true" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Light Control"
+                        android:id="@+id/lightbtn"
+                        android:layout_gravity="center_horizontal"
+                        android:width="150dp"
+                        android:background="#f8f38c"
+                        android:layout_margin="6dp"
+                        android:onClick="lightControl"
+                        android:longClickable="true" />
+
+                    <Button
+                        android:layout_width="147dp"
+                        android:layout_height="wrap_content"
+                        android:text="Get Parameters"
+                        android:id="@+id/button14"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="6dp"
+                        android:background="#efb5ef"
+                        android:onClick="parameters" />
+
+                    <Button
+                        android:layout_width="149dp"
+                        android:layout_height="wrap_content"
+                        android:text="Change IP &amp; Port"
+                        android:id="@+id/button15"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="6dp"
+                        android:background="#a7a1a1"
+                        android:onClick="changeIp" />
+
+                    <Button
+                        android:layout_width="149dp"
+                        android:layout_height="wrap_content"
+                        android:text="PID loop"
+                        android:id="@+id/button17"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="6dp"
+                        android:background="#82c686"
+                        android:onClick="pid" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About"
+                        android:id="@+id/aboutbtn"
+                        android:layout_gravity="center_horizontal"
+                        android:width="150dp"
+                        android:background="#a0faf7"
+                        android:textColor="#083037"
+                        android:layout_column="0"
+                        android:layout_margin="6dp"
+                        android:onClick="about" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/voiceCommand"
+                            android:src="@android:drawable/ic_btn_speak_now"
+                            android:shape = "oval" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/helpVoice"
+                            android:src="@android:drawable/ic_menu_help"
+                            android:onClick="voiceHelp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/voiceView"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollView"
+                    android:layout_column="0" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/lightStatus"
+                        android:layout_column="0" />
+                </ScrollView>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollView2"
+                    android:layout_column="0" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/fanStatus"
+                        android:layout_column="0" />
+                </ScrollView>
+
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+
+</ScrollView>
