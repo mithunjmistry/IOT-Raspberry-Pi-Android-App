@@ -9,3 +9,4 @@ Modify the app as per need for your project. This is an open-source project mean
 strictly prohibited and can incur legal action. This is free to use for educational purpose only.
 
 * This App was made from October-2015 till June-2016 and is no longer maintained.
+* If we want to use ready made library, see my Socket.IO-Usage-Demo-Android repository - https://github.com/mithunjmistry/Socket.IO-Usage-Demo-Android
